@@ -36,7 +36,7 @@ public class Denuncia {
 	private int id;
 	@Column(name = "dni", unique = true, nullable = false, length = 10)
 	private String dni;
-	@Column(name = "fecha", nullable = false, updatable = false)
+	@Column(name = "fecha", nullable = false)
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date fecha;
 	@Column(name = "titulo", nullable = false, length = 3)
